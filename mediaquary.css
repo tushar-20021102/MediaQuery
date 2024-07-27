@@ -1,0 +1,59 @@
+@media(max-width: 600px){
+    /* Phones */
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: 'This is Phone Compatible';
+    }
+}
+
+@media(min-width: 600px){
+    /* Portrait Tablets */
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content:'Portrait Tablets and Large Phone Compatible'
+    }
+}
+
+
+@media(min-width: 768px){
+    /* Landscape Tablets */
+    body{
+        background-color: blue;
+    }
+
+    div::after{
+        content: 'Landscape Tablets Compatible';
+    }
+
+}
+
+@media(min-width: 992px){
+    /* Large Devices */
+    body{
+        background-color: yellowgreen;
+    }
+
+    div::after{
+        content: 'Large Devices Compatible'
+    }
+}
+
+@media(min-width: 1200px){
+    /* ExtraLarge Device */
+    body{
+        background-color: violet;
+    }
+
+    div::after{
+        content: 'Compatible for Large Screens';
+    }
+}
+
+div{
+    text-align: center;
+    font-size: x-large;
+}
